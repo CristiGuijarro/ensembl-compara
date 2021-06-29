@@ -386,7 +386,7 @@ sub core_pipeline_analyses {
                 'orthofinder_dir' => $self->o('orthofinder_dir'),
                 'cmd'             => 'cd #orthofinder_dir#; #orthofinder_exe# -f #symlink_dir#',
             },
-            -rc_name    => '132Gb_job',
+            -rc_name    => '128Gb_16c_job',
         },
 
         {   -logic_name => 'backup_ref_db_again',

@@ -156,7 +156,6 @@ sub resource_classes_single_thread {
         '48Gb_job'     => {'LSF' => ['-C0 -M48000 -R"select[mem>48000] rusage[mem=48000]"', $reg_requirement],             'LOCAL' => [ '', $reg_requirement ] },
         '64Gb_job'     => {'LSF' => ['-C0 -M64000 -R"select[mem>64000] rusage[mem=64000]"', $reg_requirement],             'LOCAL' => [ '', $reg_requirement ] },
         '96Gb_job'     => {'LSF' => ['-C0 -M96000 -R"select[mem>96000] rusage[mem=96000]"', $reg_requirement],             'LOCAL' => [ '', $reg_requirement ] },
-        '132Gb_job'    => {'LSF' => ['-q bigmem -C0 -M132000 -R"select[mem>132000] rusage[mem=132000]"', $reg_requirement],    'LOCAL' => [ '', $reg_requirement ] },
         '512Gb_job'    => {'LSF' => ['-q bigmem -C0 -M512000 -R"select[mem>512000] rusage[mem=512000]"', $reg_requirement],    'LOCAL' => [ '', $reg_requirement ] },
 
         '250Mb_6_hour_job' => {'LSF' => ['-C0 -W 6:00 -M250   -R"select[mem>250]   rusage[mem=250]"',  $reg_requirement],  'LOCAL' => [ '', $reg_requirement ] },
